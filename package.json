@@ -2,13 +2,21 @@
   "name": "haider.pw",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build": "nx build haider.pw"
+  },
   "private": true,
-  "dependencies": {},
   "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@nx/devkit": "^16.10.0",
     "@nx/js": "16.10.0",
     "@nx/workspace": "16.10.0",
     "nx": "16.10.0",
-    "nx-cloud": "latest"
+    "nx-cloud": "latest",
+    "prettier": "^2.6.2",
+    "@vercel/kv": "^0.2.3",
+    "nuxt": "^3.7.4",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.5"
   }
 }

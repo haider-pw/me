@@ -37,3 +37,11 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Nuxt dev/build outputs
+.output
+.nuxt
+.nitro
+.cache
+
+.vercel
