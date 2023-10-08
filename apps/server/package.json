@@ -3,7 +3,6 @@
   "description": "Deploy express js to vercel.",
   "version": "0.1.0",
   "main": "./dist/src/index.js",
-  "license": "MIT",
   "scripts": {
     "dev": "nodemon",
     "start": "nodemon",
@@ -30,5 +29,6 @@
     "@vue-storefront/eslint-config": "~2.0.0-rc.7",
     "dotenv-cli": "^7.3.0",
     "tsup": "^7.2.0"
-  }
+  },
+  "license": "MIT"
 }
