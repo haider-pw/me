@@ -12,6 +12,7 @@ const cookieNames = {
 };
 
 const config = {
+  server_mode: process.env.SERVER_MODE || 'standard',
   integrations: {
     /* VSF integration config */
     magento: {

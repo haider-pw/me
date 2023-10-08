@@ -6,9 +6,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon",
-    "tiles247": "dotenv -e .env.tiles247 nodemon",
     "start": "nodemon",
-    "build": "tsup src/index.ts --dts",
+    "build": "tsc",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix"
   },
