@@ -146,7 +146,7 @@ importers:
         version: 2.0.0(@types/node@18.7.1)(typescript@5.1.6)
     devDependencies:
       '@types/express':
-        specifier: ^4.17.13
+        specifier: ^4.17.18
         version: 4.17.18
       '@vue-storefront/eslint-config':
         specifier: ~2.0.0-rc.7
