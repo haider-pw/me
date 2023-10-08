@@ -6,7 +6,7 @@
       "DOM.Iterable",
       "ES2019"
     ],
-    "module": "CommonJS",
+    "module": "ESNext",
     "composite": false,
     "declaration": true,
     "declarationMap": false,
