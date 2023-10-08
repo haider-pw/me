@@ -44,4 +44,5 @@ Thumbs.db
 .nitro
 .cache
 
-.vercel
+**/.vercel
+**/.env

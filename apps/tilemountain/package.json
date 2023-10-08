@@ -1,0 +1,32 @@
+{
+  "name": "tilemountain",
+  "private": true,
+  "type": "module",
+  "nx": {
+    "targets": {
+      "build": {
+        "outputs": [
+          "{projectRoot}/.output",
+          "{projectRoot}/.nuxt"
+        ]
+      },
+      "tags": [
+        "scope:haider.pw"
+      ],
+      "implicitDependencies": [
+        "tag:scope:haider.pw"
+      ]
+    }
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nrwl/devkit": "^16.10.0",
+    "sdk": "workspace:^"
+  }
+}
