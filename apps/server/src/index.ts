@@ -1,10 +1,11 @@
 import { createServer } from '@vue-storefront/middleware';
 import consola from 'consola';
 import config from '../middleware.config';
+import express from 'express';
 
 
 // Export this function so it can be reused in api/vercel.ts
-export async function getInitializedApp() {
+export async function getInitializedApp():Promise<express.Express> {
   return await createServer({ integrations: config.integrations });
 }
 
