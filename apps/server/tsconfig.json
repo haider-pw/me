@@ -10,6 +10,7 @@
     "composite": false,
     "declaration": true,
     "declarationMap": false,
+    "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strictPropertyInitialization": false,

@@ -1,15 +1,10 @@
-import * as express from 'express';
+import { Router, Request, Response } from 'express';
 
-const router: express.Router = express.Router();
+const router: Router = Router();
 
-/**
- * GET product list.
- *
- * @return product list | empty.
- */
-router.get("/", async (req:express.Request, res:express.Response) => {
+router.get("/", async (req: Request, res: Response) => {
   try {
-    res.json({
+    res.status(200).json({
       status: 200,
       message: "Express seems to be running. No issues here.",
     });
