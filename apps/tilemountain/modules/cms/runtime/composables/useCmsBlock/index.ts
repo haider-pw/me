@@ -95,6 +95,7 @@ export const useCmsBlocks = () => {
       // });
 
       // console.log('responseTry',responseTry);
+      //test
 
       const { data, error } = await useAsyncData<CmsBlocksResponse>('fetch-cms-blocks', () => useSdk().magento.cmsBlocks({
         identifiers: cmsBlockIdentifiers
