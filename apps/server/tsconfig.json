@@ -6,8 +6,9 @@
       "DOM.Iterable",
       "ES2019"
     ],
+    "module": "CommonJS",
     "composite": false,
-    "declaration": false,
+    "declaration": true,
     "declarationMap": false,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -18,15 +19,25 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "preserveWatchOutput": true,
+    "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
+    "sourceMap": true,
+    "removeComments": true,
     "target": "ES2019",
     "types": [
       "@types/express"
     ],
     "rootDir": ".",
-    "outDir": "lib"
+    "outDir": "dist"
   },
-  "include": ["**/*.ts"],
-  "exclude": ["dist", "lib", "node_modules", ".turbo"]
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "dist",
+    "lib",
+    "node_modules",
+    ".turbo"
+  ]
 }

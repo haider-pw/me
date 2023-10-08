@@ -1,13 +1,12 @@
 {
   "name": "server",
   "version": "0.1.0",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+  "main": "./dist/src/index.js",
   "license": "MIT",
   "scripts": {
     "dev": "nodemon",
     "start": "nodemon",
-    "build": "tsup src/index.ts --dts",
+    "build": "tsc --project tsconfig.json",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix"
   },

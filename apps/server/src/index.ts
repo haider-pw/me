@@ -2,7 +2,6 @@ import { createServer } from '@vue-storefront/middleware';
 import consola from 'consola';
 import config from '../middleware.config';
 import '@vue-storefront/magento-api/server/index.js';
-// import express from 'express';
 import status from '../api/status';
 
 (async () => {
