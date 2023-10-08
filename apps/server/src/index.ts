@@ -1,25 +1,18 @@
 import { createServer } from '@vue-storefront/middleware';
 import consola from 'consola';
 import config from '../middleware.config';
-import express from 'express';
+import '@vue-storefront/magento-api/server/index.js';
+// import express from 'express';
+import status from '../api/status';
 
-
-// Export this function so it can be reused in api/vercel.ts
-export async function getInitializedApp():Promise<express.Express> {
-  return await createServer({ integrations: config.integrations });
-}
-
-// Local/server environment
-if (config.server_mode !== 'SERVERLESS') {
-  (async () => {
-    const app = await getInitializedApp();
-    const host = process.argv[2] ?? '127.0.0.1';
-    const port = Number(process.argv[3]) || 4000;
-
-    app.listen(port, host, () => {
-      consola.success(`API server listening on http://${host}:${port}`);
-    });
-  })();
-}
+(async () => {
+  const app = await createServer({ integrations: config.integrations });
+  const host = process.argv[2] ?? '127.0.0.1';
+  const port = Number(process.argv[3]) || 4000;
+  app.use('/api/status', status);
+  app.listen(port, host, () => {
+    consola.success(`API server listening on http://${host}:${port}`);
+  });
+})();
 
 
