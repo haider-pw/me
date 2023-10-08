@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "nodemon",
     "start": "nodemon",
-    "build": "tsc",
+    "build": "tsup src/index.ts --dts",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix"
   },
