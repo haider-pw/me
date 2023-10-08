@@ -7,7 +7,7 @@ const router: express.Router = express.Router();
  *
  * @return product list | empty.
  */
-router.get("/", async (req, res) => {
+router.get("/", async (req:express.Request, res:express.Response) => {
   try {
     res.json({
       status: 200,
