@@ -157,6 +157,12 @@ importers:
 
   apps/serverv2:
     dependencies:
+      '@vue-storefront/magento-api':
+        specifier: ^2.3.0
+        version: 2.3.0(@nuxt/vue-app@2.17.1)(@vue/runtime-dom@3.3.4)(nuxt@2.17.1)(rollup@2.79.1)(vite@4.4.11)(vue@2.6.14)(webpack@4.47.0)
+      '@vue-storefront/middleware':
+        specifier: 3.5.1
+        version: 3.5.1
       express:
         specifier: ^4.18.2
         version: 4.18.2
