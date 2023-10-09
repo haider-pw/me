@@ -1,6 +1,6 @@
 import express from 'express';
 import { createServer } from '@vue-storefront/middleware';
-import '@vue-storefront/magento-api/server/index.js';
+import '@vue-storefront/magento-api/server';
 import config from './middleware.config';
 // const app = express();
 (async () => {
