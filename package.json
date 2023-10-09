@@ -6,6 +6,10 @@
     "build": "nx build haider.pw"
   },
   "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nx/devkit": "^16.10.0",
