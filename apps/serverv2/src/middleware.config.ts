@@ -1,4 +1,4 @@
-import '@vue-storefront/magento-api/server';
+import '@vue-storefront/magento-api/server/index.js';
 import dotenv from 'dotenv';
 dotenv.config();
 
