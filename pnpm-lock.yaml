@@ -22,7 +22,7 @@ importers:
         version: 0.34.6(vitest@0.34.6)
       '@vue-storefront/magento-sdk':
         specifier: ^2.0.0
-        version: 2.0.0(@vue-storefront/middleware@3.5.1)(graphql@16.8.1)(typescript@5.1.6)
+        version: 2.0.0(@vue-storefront/middleware@3.6.0)(graphql@16.8.1)(typescript@5.1.6)
       '@vueuse/core':
         specifier: ^10.5.0
         version: 10.5.0(vue@3.3.4)
@@ -161,8 +161,8 @@ importers:
         specifier: ^2.3.0
         version: 2.3.0(@nuxt/vue-app@2.17.1)(@vue/runtime-dom@3.3.4)(nuxt@2.17.1)(rollup@2.79.1)(vite@4.4.11)(vue@2.6.14)(webpack@4.47.0)
       '@vue-storefront/middleware':
-        specifier: 3.5.1
-        version: 3.5.1
+        specifier: 3.6.0
+        version: 3.6.0
       express:
         specifier: ^4.18.2
         version: 4.18.2
@@ -5308,7 +5308,7 @@ packages:
       - webpack
     dev: false
 
-  /@vue-storefront/magento-sdk@2.0.0(@vue-storefront/middleware@3.5.1)(graphql@16.8.1)(typescript@5.1.6):
+  /@vue-storefront/magento-sdk@2.0.0(@vue-storefront/middleware@3.6.0)(graphql@16.8.1)(typescript@5.1.6):
     resolution: {integrity: sha512-9YpAuzshmxJPcYOJo+k6EhWzADz5CH3WNTlrGo3XoS+7GMH8fg9Oqr5L/YEUAfqRUyV3trVPEUmVt6p1/na8tA==}
     engines: {node: '>=16.x < 19'}
     peerDependencies:
@@ -5316,7 +5316,7 @@ packages:
     dependencies:
       '@apollo/client': 3.8.5(graphql@16.8.1)
       '@vue-storefront/magento-types': 1.0.1
-      '@vue-storefront/middleware': 3.5.1
+      '@vue-storefront/middleware': 3.6.0
       '@vue-storefront/sdk': 1.1.2
       '@vue-storefront/sdk-axios-request-sender': 1.0.0
       axios: 0.27.2
@@ -5338,6 +5338,18 @@ packages:
 
   /@vue-storefront/middleware@3.5.1:
     resolution: {integrity: sha512-e3nKH5/IlGbsXCv2I1DoEGGVXauLUTGO7tutUHvhbTOB3wYqVhrU2ehsB4AGCZqsmkmpZFSIiFX88IOx0mWqTw==}
+    dependencies:
+      consola: 2.15.3
+      cookie-parser: 1.4.6
+      cors: 2.8.5
+      express: 4.18.2
+      helmet: 5.1.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /@vue-storefront/middleware@3.6.0:
+    resolution: {integrity: sha512-Q/g5mFCAqOWNkooV1t9YXZvMT0ax37qQ8AiyntI+9zdJfj1l0bheFIuT/FSpaiv2G8gWpIWTOlEUhsKHgY8xFA==}
     dependencies:
       consola: 2.15.3
       cookie-parser: 1.4.6
