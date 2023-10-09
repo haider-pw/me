@@ -2,11 +2,10 @@
   "name": "server",
   "version": "0.1.0",
   "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
   "license": "MIT",
   "scripts": {
     "dev": "nodemon",
-    "start": "nodemon",
+    "start": "node ./dist/index.js",
     "build": "tsup src/index.ts --dts",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix"
