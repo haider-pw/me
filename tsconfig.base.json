@@ -18,7 +18,8 @@
       "@nuxt-integrated/ui": ["libs/ui/src/index.ts"],
       "@nuxt-integrated/utils": ["libs/utils/src/index.ts"],
       "magento-sdk": ["packages/magento-sdk/src/index.ts"],
-      "sdk": ["packages/sdk/src/index.ts"]
+      "sdk": ["packages/sdk/src/index.ts"],
+      "shared-config": ["shared-config/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
